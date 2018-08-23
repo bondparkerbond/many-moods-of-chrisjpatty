@@ -123,7 +123,8 @@ class App extends Component {
             href="https://github.com/chrisjpatty"
           >
             Chris Patty
-          </a>
+          </a><br/>
+          Full source code <a href="https://github.com/chrisjpatty/many-moods-of-chrisjpatty">can be found here</a>.
         </footer>
       </div>
     )
