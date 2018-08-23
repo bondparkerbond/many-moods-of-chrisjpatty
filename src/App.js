@@ -81,7 +81,10 @@ tweetsPerMonth = tweetsPerMonthArr
   })
   .filter(t => t.created > new Date('8/1/2014'))
 
-console.log(tweetsPerMonth)
+const monthColors = d3.scaleSequential(d3.interpolateMagma)
+const monthColorDomain = d3.extent(tweetsPerMonth, d => d.sentiment.score)
+monthColorDomain[0] = monthColorDomain[0] - .2
+monthColors.domain(monthColorDomain).nice()
 
 class App extends Component {
   render() {
@@ -107,7 +110,7 @@ class App extends Component {
         <h2>Average sentiment per day</h2>
         <Chart tweets={tweetsPerDay} colors={colors} noLink />
         <h2>Average sentiment per month</h2>
-        <Chart tweets={tweetsPerMonth} colors={colors} noLink />
+        <Chart tweets={tweetsPerMonth} colors={monthColors} noLink />
         <footer>
           Made with{' '}
           <span role="img" aria-label="love">
