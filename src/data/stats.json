@@ -1,0 +1,21 @@
+{
+  "combined": {
+    "avg_sentiment_score": 0.6541944302067316,
+    "count": 5853,
+    "unique_word_count": 13412,
+    "most_used_word": { "w": "feel", "n": 105 }
+  },
+  "mine": {
+    "avg_sentiment_score": 0.7511591962905718,
+    "count": 4529,
+    "unique_word_count": 8492,
+    "most_used_word": { "w": "feel", "n": 105 },
+    "mostMentioned": { "w": "@tehlazyartist", "n": 225 }
+  },
+  "retweets": {
+    "avg_sentiment_score": 0.32250755287009064,
+    "count": 1324,
+    "unique_word_count": 4920,
+    "most_used_word": { "w": "trump", "n": 46 }
+  }
+}
